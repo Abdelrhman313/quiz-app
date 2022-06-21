@@ -1,0 +1,56 @@
+{
+  "students": [
+    {
+      "userName": "amira",
+      "userEmail": "ami@gmail.com",
+      "userPassword": "12",
+      "id": 1
+    }
+  ],
+  "doctor": [
+    {
+      "userName": "admin",
+      "userEmail": "admin@admin.com",
+      "userPassword": "123",
+      "id": 1
+    }
+  ],
+  "subjects": [
+    {
+      "questions": [
+        {
+          "question": "10+10",
+          "answerA": "20",
+          "answerB": "40",
+          "answerC": "30",
+          "answerD": "50",
+          "correctAnswer": "20"
+        }
+      ],
+      "subjectName": "الرياضيات",
+      "id": 1
+    },
+    {
+      "questions": [
+        {
+          "question": "2+2",
+          "answerA": "5",
+          "answerB": "3",
+          "answerC": "4",
+          "answerD": "2",
+          "correctAnswer": "4"
+        }
+      ],
+      "subjectName": "الرياضيات",
+      "id": 2
+    }
+  ],
+  "login": [
+    {
+      "username": "admin",
+      "role": "doctor",
+      "userId": 1,
+      "id": 1
+    }
+  ]
+}
