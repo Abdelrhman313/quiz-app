@@ -2,7 +2,7 @@
   color: #fff;
   font-size: 18px;
   font-weight: 500;
-  // font-family: 'Tajawal', sans-serif;
+  
 }
 .loginForm{
   padding-top: 2rem;
@@ -22,11 +22,9 @@
    form{
      mat-form-field {
        width: 100%;
-       margin: 1rem 0;
+       margin: 1rem 0 .5rem;
      }
-    //  ::ng-deep .mat-form-field-appearance-fill .mat-form-field-flex {
-    //  background-color: #fff;
-    //  }
+    
      .role{
        color:#333;
        font-weight: 500;
