@@ -15,6 +15,7 @@ const routes: Routes = [
   {path:'subjects',component:SubjectsComponent},
   {path:'students',component:StudentsComponent},
   {path:'new-exam',component:NewExamComponent},
+  {path:'**',redirectTo:'login',pathMatch:'full'}
 ];
 
 @NgModule({
