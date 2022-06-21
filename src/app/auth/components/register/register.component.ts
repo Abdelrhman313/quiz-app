@@ -62,26 +62,26 @@ export class RegisterComponent implements OnInit {
       })
     }
     else{
-      this.authservice.registerForm(Model).subscribe((res:any)=>{
-        this.toaster.success("تم انشاء الحساب بنجاح","",{
-          disableTimeOut: false,
-          titleClass: "toastr_title",
-          messageClass: "toastr_message",
-          timeOut:5000,
-          closeButton: true,
-        })
-        const model = {
-          username:res.userName,
-          role:'students',
-          userId:res.id
-        }
-        this.authservice.loginForm(model).subscribe((res:any)=>{
-          this.authservice.user.next(res)
-        })
+        this.authservice.registerForm(Model).subscribe((res:any)=>{
+          this.toaster.success("تم انشاء الحساب بنجاح","",{
+            disableTimeOut: false,
+            titleClass: "toastr_title",
+            messageClass: "toastr_message",
+            timeOut:5000,
+            closeButton: true,
+          })
+          const model = {
+            username:res.userName,
+            role:'students',
+            userId:res.id
+          }
+          this.authservice.loginForm(model).subscribe((res:any)=>{
+            this.authservice.user.next(res)
+          })
         this.router.navigate(['/subjects']);
-        },(error)=>{
-        alert(error)
-      })
+        }
+        )}
+  
     }
-  }
 }
+
